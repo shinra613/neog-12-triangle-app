@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style/style.css">
+    <title>Triangle App</title>
+</head>
+<body>
+
+    <div class="container-main">
+      
+        <div class="container-sub">
+
+            <ul>
+
+            <li>
+                <label >Select an option</label>
+
+            </li>
+            <li>
+                <select name="URL" id="triangleOptions" onchange="window.location.replace(this.options[this.selectedIndex].value)">
+                    <option>--please select an option--</option>
+                    <option value="/public/triangleAngles.html">Angles Of triangle</option>
+                    <option value="/public/areaCaculation.html">Calculate Area</option>
+                    <option value="/public/HyponetuseCheck.html">Hypotenuse Checker</option>
+                    <option value="/public/quiz.html">Triangle Quiz</option>
+                </select>
+            </li>
+            </ul>
+            
+
+            
+
+        </div>
+       
+
+    </div>
+    
+</body>
+</html>
