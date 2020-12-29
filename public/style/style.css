@@ -29,9 +29,18 @@ background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, F
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.goback{
+    background-image: url(/public/images/background-1409125_960_720.webp);
+    width: 100px;
+    height: 30px;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .container-sub{
     text-align: center;
-    width: 40%;
+    max-width: 70%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -39,6 +48,7 @@ background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, F
     font-size: x-large;
     font-weight: 300;
     color:white;
+    overflow: auto;
 }
 
 #result{
@@ -62,6 +72,10 @@ ul{
 
 li{
     padding: .5rem;
+}
+a{
+    color:white;
+    text-decoration: none;
 }
 
 input{

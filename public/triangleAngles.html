@@ -7,17 +7,20 @@
     <title>Document</title>
 </head>
 <body>
+
+    <button class="goback"> <a href="/index.html">Go back</a></button>
     <div class="container-main">
 
       <div class="container-sub">
        <div>Enter the angles, to check if it's a triangle</div>
         <ul class="container-angles">
+            
             <li><input type="number"id="number1"></li>
             <li><input type="number"id="number2"></li>
             <li><input type="number"id="number3"></li>
         </ul>
          
-        <button id="angleCheck">Check</button>
+        <button id="angleCheck" onclick="angleChecker()">Check</button>
         <div id="result"></div>
       
       </div>
