@@ -7,7 +7,46 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="goback"> <a href="/index.html">Go back</a></button>
+    <button class="goback" onclick="returnFun()"> Go back</button>
+
+    <div class="container-main">
+
+        <div class="container-sub">
+         <div>To Calculate Hypotenuse, kindly enter the length of two sides</div>
+
+         <div  class="container-triangle">
+
+            <div class="hmanagetri">
+                <div class="ha">a</div>
+                <div class="hb">b</div>
+                <div class="hc">c</div>
+                <div class="line hline1"></div>
+                <div class="line hline2"></div>
+                <div class="line hline3"></div>
+              </div>
+       
+         </div>
+
+
+          <ul class="container-angles">
+              
+              <li>a: <input type="number"id="hnumber1"></li>
+              <li>b: <input type="number"id="hnumber2"></li>
+             
+          </ul>
+           
+          <button id="angleCheck" onclick="hypcalc()">Check</button>
+          <div id="result"></div>
+        
+        </div>
+        
+       <script src="/script/hypotenuseCalc.js"></script>
+        <script>
+            function returnFun() {
+              location.replace("https://funtriangle.netlify.app/")
+            }
+            </script>
+      </div>
     
 </body>
 </html>
