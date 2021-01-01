@@ -164,6 +164,9 @@ background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, F
     padding: 1rem;
 }
 
+.infotext{
+    padding:1rem;
+}
 
 .container-angles{
     text-align: center;
