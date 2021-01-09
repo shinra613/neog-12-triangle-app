@@ -10,8 +10,8 @@ body{
     justify-content: center;
     height: 100vh;
     background: #3a6186;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -19,6 +19,19 @@ background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, F
     background-image: url(/public/images/background-1409125_960_720.webp);
     background-position:center;
     background-repeat: no-repeat;
+    border-radius: 3rem;
+    max-width: 100%;
+    padding: 2rem 2rem 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container-main-quiz{
+    /* background-image: url(/public/images/background-1409125_960_720.webp);
+    background-position:center;
+    background-repeat: no-repeat; */
+    background-color: rgb(42, 218, 121);
     border-radius: 3rem;
     max-width: 100%;
     padding: 2rem 2rem 1rem;
@@ -214,5 +227,13 @@ button{
 button:active{
     position: relative;
     top:10px;
+}
+
+.qstyle{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    padding:1rem;
+    border: 1px solid ;
+    margin: 1rem;
 }
 
