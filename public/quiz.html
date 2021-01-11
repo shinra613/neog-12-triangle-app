@@ -9,15 +9,17 @@
 <body>
     <button class="goback" onclick="returnFun()"> Go back</button>
 
-    <form class="container-main-quiz">
+    <form id="qform" class="container-main-quiz" onsubmit="answerCheck()" >
 
      <div id="question">
 
      </div>
-
-     <button>submit</button>
+     
+     <input type="submit" value="Submit" class="submitor">
       
     </form>
+
+    
 
     <script>
         function returnFun() {

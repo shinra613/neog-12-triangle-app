@@ -216,7 +216,7 @@ select{
     font-family: 'Roboto', sans-serif;
 }
 
-button{
+button {
     width: 100px;
     height: 30px;
     border-radius: 2rem;
@@ -225,6 +225,18 @@ button{
 }
 
 button:active{
+    position: relative;
+    top:10px;
+}
+
+.submitor{
+    width: 100px;
+    height: 30px;
+    border-radius: 2rem;
+    margin: 1rem auto;
+}
+
+.submitor:active{
     position: relative;
     top:10px;
 }
