@@ -1,74 +1,82 @@
 var question = document.querySelector("#question");
-let form = document.querySelector('#qform');
+let form = document.querySelector('#formal');
+let formsubmit = document.querySelector('#sbmt');
 
 
 
+var qb = [
+    {
+        sn: "1",
+        name:"question1",
+        que: "test question loren ipsum",
+        opt: ["test1", "test2", "test3", "test4"],
+        ans: "bill"
+    },
+    {
+        sn: "2",
+        name:"question2",
+        que: "test question loren ipsum ",
+        opt: ["test5", "test6", "test7", "test8"],
+        ans: "kill"
+    },
+
+]
+
+const formbuilder = () => {
+
+    
 
 
+   
 
-window.onload = function () {
-
-    var questionBank = [
-        {
-            sn: "1",
-            que: "test question loren ipsum yo",
-            opt: ["bill", "kill", "bilf", "kilf"],
-            ans: "bill"
-        },
-        {
-            sn: "2",
-            que: "test question loren ipsum yo",
-            opt: ["bill", "kill", "bil", "kil"],
-            ans: "kill"
-        },
-       
-    ]
-
-
-    console.log(questionBank[0].que);
-
-    for (var i = 0; i <= questionBank.length; i++) {
+    for (var i = 0; i < qb.length; i++) {
 
         var qt = document.createElement("div");
 
-
-
-
         qt.classList.add("qstyle");
-        qt.innerText = questionBank[i].sn + ". " + questionBank[i].que;
+        qt.innerText = qb[i].sn + ". " + qb[i].que;
         question.appendChild(qt);
 
         var optionContainer = document.createElement("div");
 
-        for (var j = 0; j < questionBank[i].opt.length; j++) {
+        for (var j = 0; j < qb[i].opt.length; j++) {
 
             var od = document.createElement("span");
-            od.innerHTML = "<input type=radio value = " + questionBank[i].opt[j] + "  >" +  questionBank[i].opt[j];
+            od.innerHTML = "<input type=radio class= ." + qb[i].name + " name=" + qb[i].name + "  value = " + qb[i].opt[j] + "  >" + qb[i].opt[j];
 
             optionContainer.appendChild(od);
 
         }
 
         question.appendChild(optionContainer);
- 
 
-       
+
+          
 
     }
+    
+}
 
-   
-   
+var data = new FormData(form);
+
+const answerCheck = () => {
+
+
+    for(var k=0;k<qb.length;form.elements = form.elements[k++]){
+          if(form.elements.name == qb[k].name){
+
+            console.log(form.elements.value);
+
+          }
+    }
+
+    // console.log(form.elements)
+
+    // console.log(document.getElementsByName(qb[0].name).value);
 }
 
 
-console.log(form.elements);
-
-
-const answerCheck=()=>{
-
-   
-
-}
+formsubmit.addEventListener("click",()=>{ answerCheck(); })
 
 
 

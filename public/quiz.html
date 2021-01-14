@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="formbuilder()">
     <button class="goback" onclick="returnFun()"> Go back</button>
 
-    <form id="qform" class="container-main-quiz" onsubmit="answerCheck()" >
+    <form id="formal" class="container-main-quiz" onsubmit="answerCheck()">
 
      <div id="question">
 
      </div>
      
-     <input type="submit" value="Submit" class="submitor">
+     <input type="submit" id="sbmt" value="click here" class="submitor">
       
     </form>
 
