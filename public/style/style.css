@@ -115,6 +115,14 @@ body{
     left: 17px;
 }
 
+.line4{
+    width:110px;
+    position: relative;
+    top:82px;
+    left: 67px;
+    transform : rotate(90deg);
+}
+
 .hline1{
     position: relative;
     top:90px;
@@ -152,6 +160,18 @@ body{
     position: absolute;
     left: 235px;
     top:125px;
+}
+
+.ah{
+    position: absolute;
+    left: 130px;
+    top:85px;
+}
+
+.abb{
+    position: absolute;
+    left: 120px;
+    top:145px;
 }
 
 .ha{

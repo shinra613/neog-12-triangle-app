@@ -9,6 +9,49 @@
 <body>
     <button class="goback" onclick="returnFun()"> Go back</button>
 
+    <div class="container-main">
+
+      <div class="container-sub">
+          <div>Area Calculator </div>
+       
+
+       <div  class="container-triangle">
+
+        <div class="managetri">
+          <div class="aa">x</div>
+          <div class="ab">y</div>
+          <div class="ac">z</div>
+          <div class="ah">h</div>
+          <div class="abb">b</div>
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+          <div class="line line4"></div>
+        </div>
+     
+       </div>
+       <div class="infotext">kindly enter the below requested details</div>
+       
+        <ul class="container-angles">
+            
+            <li>Base: <input type="number"id="anumber1"></li>
+            <li>Height: <input type="number"id="anumber2"></li>
+           
+        </ul>
+         
+        <button id="areacalc" onclick="areacalc()">Check</button>
+        <div id="result"></div>
+      
+      </div>
+      
+     <script src="/script/areaoftriangle.js"></script>
+      <script>
+          function returnFun() {
+            location.replace("https://funtriangle.netlify.app/")
+          }
+          </script>
+    </div>
+
     <script>
         function returnFun() {
           location.replace("https://funtriangle.netlify.app/")
