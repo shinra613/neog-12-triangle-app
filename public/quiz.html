@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body onload="formbuilder()">
+<body >
     <button class="goback" onclick="returnFun()"> Go back</button>
 
-    <form id="formal" class="container-main-quiz" onsubmit="answerCheck()">
+    
 
-     <div id="question">
+    <form id="formal" class="container-main-quiz" onsubmit="answerCheck(); return false">
+
+     <div id="question" >
 
      </div>
      
@@ -21,7 +23,7 @@
 
     
 
-    <script>
+    <script>  
         function returnFun() {
           location.replace("https://funtriangle.netlify.app/")
         }

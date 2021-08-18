@@ -29,7 +29,7 @@ const formbuilder = () => {
 
    
 
-    for (var i = 0; i < qb.length; i++) {
+ for (var i = 0; i < qb.length; i++) {
 
         var qt = document.createElement("div");
 
@@ -41,7 +41,7 @@ const formbuilder = () => {
 
         for (var j = 0; j < qb[i].opt.length; j++) {
 
-            var od = document.createElement("span");
+            var od = document.createElement("label");
             od.innerHTML = "<input type=radio class= ." + qb[i].name + " name=" + qb[i].name + "  value = " + qb[i].opt[j] + "  >" + qb[i].opt[j];
 
             optionContainer.appendChild(od);
@@ -57,26 +57,37 @@ const formbuilder = () => {
     
 }
 
+window.onload = (event) => {
+    formbuilder();
+  };
+
 var data = new FormData(form);
 
 const answerCheck = () => {
+    
+   
 
+    console.log(data.elements['question1']);
+    for (var k = 0; k < qb.length;k++){
+          if(form.elements.name === qb[k].ans){
 
-    for(var k=0;k<qb.length;form.elements = form.elements[k++]){
-          if(form.elements.name == qb[k].name){
-
-            console.log(form.elements.value);
+            console.log("form.elements");
 
           }
     }
 
-    // console.log(form.elements)
+    console.log(form.elements)
 
     // console.log(document.getElementsByName(qb[0].name).value);
 }
 
 
-formsubmit.addEventListener("click",()=>{ answerCheck(); })
+formsubmit.addEventListener("click", (event) => {
+
+    event.preventDefault();
+  
+    answerCheck();
+})
 
 
 
