@@ -67,7 +67,7 @@ const answerCheck = () => {
     
    
 
-    console.log(data.elements['question1']);
+    console.log(data.elements);
     for (var k = 0; k < qb.length;k++){
           if(form.elements.name === qb[k].ans){
 
