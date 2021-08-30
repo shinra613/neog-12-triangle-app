@@ -10,14 +10,14 @@ var qb = [
         name:"question1",
         que: "test question loren ipsum",
         opt: ["test1", "test2", "test3", "test4"],
-        ans: "bill"
+        ans: "test3"
     },
     {
         sn: "2",
         name:"question2",
         que: "test question loren ipsum ",
         opt: ["test5", "test6", "test7", "test8"],
-        ans: "kill"
+        ans: "test7"
     },
 
 ]
@@ -65,18 +65,18 @@ var data = new FormData(form);
 
 const answerCheck = () => {
     
-   
+    console.log(form.get('question1'));
 
-    console.log(data.elements);
+    
     for (var k = 0; k < qb.length;k++){
-          if(form.elements.name === qb[k].ans){
+        if (form.elements.question1.value === qb[k].ans){
 
-            console.log("form.elements");
+            console.log(form.elements.question+`k+1`.value);
 
           }
     }
 
-    console.log(form.elements)
+    
 
     // console.log(document.getElementsByName(qb[0].name).value);
 }
