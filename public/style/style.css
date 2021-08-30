@@ -31,7 +31,8 @@ body{
     /* background-image: url(/public/images/background-1409125_960_720.webp);
     background-position:center;
     background-repeat: no-repeat; */
-    background-color: rgb(42, 218, 121);
+    background-color: #822A44;
+    color: white;
     border-radius: 3rem;
     max-width: 100%;
     padding: 2rem 2rem 1rem;
@@ -267,5 +268,16 @@ button:active{
     padding:1rem;
     border: 1px solid ;
     margin: 1rem;
+}
+
+#qresult{
+    width: 50%;
+    margin: auto;
+    text-align: center ;
+}
+
+.label{
+    
+   width:70px;
 }
 

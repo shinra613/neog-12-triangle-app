@@ -4,22 +4,67 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/public/style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz</title>
 </head>
 <body >
     <button class="goback" onclick="returnFun()"> Go back</button>
 
-    
+    <div class="container-main-quiz">
 
-    <form id="formal" class="container-main-quiz" onsubmit="answerCheck(); return false">
+     
 
-     <div id="question" >
+    <form id="formal" >
+
+     <div id="question-container" >
+       <p>1. What triangle has all 3 angles measure less than 90 degrees?</p>
+       <label><input type="radio" name="question1" value="Acute"/>Acute </label>
+       <label><input type="radio" name="question1" value="Right"/> Right</label>
+       <label><input type="radio" name="question1" value="Obtuse"/>Obtuse </label>
 
      </div>
+     <div id="question-container" >
+      <p>2. All 3 interior angles of a triangle add up to:
+      </p>
+      <label><input type="radio" name="question2" value="240 deg"/> 240 deg</label>
+      <label><input type="radio" name="question2" value="180 deg"/>180 deg </label>
+      <label><input type="radio" name="question2" value="360 deg"/> 360 deg</label>
+
+    </div>
+    <div id="question-container" >
+      <p>3. What is the name of the segment that joins the midpoints of the sides of a triangle?
+      </p>
+      <label><input type="radio" name="question3" value="Median"/>Median </label>
+      <label><input type="radio" name="question3" value="Midsegment"/>Midsegment </label>
+      <label><input type="radio" name="question3" value="Vertex"/>Vertex </label>
+
+    </div>
+    <div id="question-container" >
+      <p>4. Which center is equidistant from the vertices of a triangle?
+      </p>
+      <label><input type="radio" name="question4" value="Circumcenter"/> Circumcenter</label>
+      <label><input type="radio" name="question4" value="Centroid"/> Centroid</label>
+      <label><input type="radio" name="question4" value="Orthocenter"/> Orthocenter</label>
+
+    </div>
+    <div id="question-container" >
+      <p>5. What is the name of a ray that divides an angle into two equal angles?
+      </p>
+      <label><input type="radio" name="question5" value="Perpendicular Bisector"/>Perpendicular Bisector </label>
+      <label><input type="radio" name="question5" value="Median"/>Median </label>
+      <label><input type="radio" name="question5" value=" Angle Bisector"/>  Angle Bisector</label>
+
+    </div>
      
-     <input type="submit" id="sbmt" value="click here" class="submitor">
-      
     </form>
+    
+    <button id="sbmt" class="submitor"> click here</button>
+
+    <div id="qresult" >
+               
+    </div>
+
+  </div>
+  
 
     
 
