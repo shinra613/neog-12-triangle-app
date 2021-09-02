@@ -17,15 +17,18 @@ const answerCheck = () => {
     let index = 0;
     
     newData.forEach(element => {
-        if (element ===qa[index]) {
+        if (element === qa[index]) {
+
+          
             score += 1;
+
         }
         index += 1;
     });
     console.log(score)
     
     
-    newResult.innerHTML = "Your total score is : " + score; 
+    newResult.innerHTML = "Your total score is : " + score+"/5"; 
     
 
 
@@ -35,7 +38,7 @@ const answerCheck = () => {
 
 formsubmit.addEventListener("click", (event) => {
 
-   
+    event.preventDefault();
   
     answerCheck();
 });
