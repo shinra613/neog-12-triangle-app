@@ -35,7 +35,7 @@ const answerCheck = () => {
 
 formsubmit.addEventListener("click", (event) => {
 
-    event.preventDefault();
+   
   
     answerCheck();
 });
